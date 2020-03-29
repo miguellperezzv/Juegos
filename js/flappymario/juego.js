@@ -35,13 +35,13 @@ var imgFondo, imgTuboA, imgTuboB, imgTuboC, imgTuboD, imgAveA, imgAveB, imgAveC;
 
 function cargarImagenes(){
   imgFondo = new Image();
-  imgFondo.src = 'mockups/fondofinal.jpg';
+  imgFondo.src = '../imagenes/flappymario/fondofinal.jpg';
   imgTuboA = new Image();
-  imgTuboA.src = 'mockups/tuberia.png';
+  imgTuboA.src = '../imagenes/flappymario/tuberia.png';
   imgTuboB = new Image();
-  imgTuboB.src = 'mockups/tuberiab.png';
+  imgTuboB.src = '../imagenes/flappymario/tuberiab.png';
   imgAveA = new Image();
-  imgAveA.src = 'mockups/avev11.png';
+  imgAveA.src = '../imagenes/flappymario/avev11.png';
 }
 
 function inicializar(){
