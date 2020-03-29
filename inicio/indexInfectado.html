@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Juego 1">
+		
+		<meta name="author" content="Miguel Pérez">
+		<title>INFECTADO</title>
+		
+		<link rel="stylesheet" type="text/css" href="../css/infectado.css" media="screen">
+		<script src="../js/infectado/jquery-1.11.0.min.js" language="JavaScript1.2"></script>
+        <script src="../js/infectado/persona.js" language="JavaScript1.2"></script>
+        <script src="../js/infectado/jugador.js" language="JavaScript1.2"></script>
+		
+		<script src="../js/infectado/script.js" language="JavaScript1.2"></script>
+
+		
+		
+	</head>
+	<body>
+		<section>
+			<canvas id="mi_canvas" width="1000" height="400">
+				Tu navegador no es compatible
+			</canvas>			
+		</section>
+		<section>
+			<div id="popup" style="display: none;">
+				<div class="content-popup">
+					<div class="close"><a href="#" id="close"><img src="../imagenes/infectado/close.png"/></a></div>
+					<div>
+					   <p>Evita las personas contagiadas</p>
+					   
+					</div>
+				</div>
+			</div>
+			<h1>INFECTADO</h1>
+			<button id="info">Información</button><br>
+			<button id="iniciar">Iniciar</button>
+		</section>
+		<audio id="pierde">
+			
+			<source src="sonido/tos.mp3" type="audio/mpeg">
+			
+			Tu navegador no es compatible
+		</audio>
+		
+		
+        <img id="persona" src="../imagenes/infectado/persona.png"/>
+        <img id="infectado" src="../imagenes/infectado/infectado.png"/>
+        <img id="jugador" src="../imagenes/infectado/jugador.png"/>
+		
+		
+	</body>
+</html>
+
