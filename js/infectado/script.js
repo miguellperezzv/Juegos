@@ -54,7 +54,7 @@ function run(){
 	buffer.height = miCanvas.height;
 	contextoBuffer = buffer.getContext("2d");
 		 
-	if(jugando==1){  
+	if(this.jugando==1){  
 		contextoBuffer.clearRect(0,0,buffer.width,buffer.height);
 		this.erradicado=0;
 		jugador.dibujar(contextoBuffer);
@@ -73,15 +73,28 @@ function run(){
 				$('#pierde')[0].play();
 			}
 		}	
-		
-		
+		//prueba comprobación ganar
+		if(jugador.puntos>0){
+			personasInfectadas=false;
+			for(i=0;i<personas.length;i++){
+				if (personas[i].infectado==true){
+					personasInfectadas=true;
+				}
+			}
+			if(personasInfectadas==false){
+				console.log("NO MÁS PERSONAS INFCTADAS")
+				this.jugando==3;
+			}
+		}
 		
 		
 		contexto.clearRect(0,0,miCanvas.width,miCanvas.height);
 		contexto.drawImage(buffer, 0, 0);
 		setTimeout("run()",20);
 		
-	}else if (jugando ==2){
+	}
+	
+	if (this.jugando ==2){
 		contextoBuffer.clearRect(0,0,buffer.width,buffer.height);
 		contextoBuffer.fillStyle = "#ffffff";
 		
@@ -95,7 +108,7 @@ function run(){
 		contexto.clearRect(0,0,miCanvas.width,miCanvas.height);
 		contexto.drawImage(buffer, 0, 0);
 	}
-	else if(jugando==3){
+	if(this.jugando==3){
 		contextoBuffer.clearRect(0,0,buffer.width,buffer.height);
 		contextoBuffer.fillStyle = "#ffffff";
 		
