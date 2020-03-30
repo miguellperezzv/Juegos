@@ -11,7 +11,7 @@
 		<script src="../js/infectado/jquery-1.11.0.min.js" language="JavaScript1.2"></script>
         <script src="../js/infectado/persona.js" language="JavaScript1.2"></script>
         <script src="../js/infectado/jugador.js" language="JavaScript1.2"></script>
-		
+		<script src="../Juegos/db.js" language="JavaScript1.2"></script>
 		<script src="../js/infectado/script.js" language="JavaScript1.2"></script>
 
 		
@@ -27,15 +27,22 @@
 			<div id="popup" style="display: none;">
 				<div class="content-popup">
 					<div class="close"><a href="#" id="close"><img src="../imagenes/infectado/close.png"/></a></div>
+					<button id="btnCargar" onclick=mostrarPuntaje()>CargarPuntajes</button>
 					<div>
-					   <p>Evita las personas contagiadas</p>
+						<tbody id="tbody_puntaje_infectado">
+
+						</tbody>
 					   
 					</div>
 				</div>
 			</div>
+
+			
+
 			<h1>INFECTADO</h1>
 			<button id="info">Información</button><br>
 			<button id="btnGuardar">GuardarPuntaje</button>
+			<button id="btnPuntajes">Puntajes</button>
 			
 			<h1 id="puntajeInfectado"></h1>>
 			

@@ -19,10 +19,15 @@ function inicio(){
 	run();	
 	
 	$('#info').click(function(){
+        alert("EVITE CONTAGIARSE");
+	});
+	
+	$('#btnPuntajes').click(function(){
         $('#popup').fadeIn('slow');
         $('.popup-overlay').fadeIn('slow');
-        $('.popup-overlay').height($(window).height());
-        return false;
+		$('.popup-overlay').height($(window).height());
+		mostrarPuntaje();
+		return false;
     });
     
     $('#close').click(function(){
